@@ -1,0 +1,4 @@
+moriven:
+    resource: "@MorivenBundle/Controller/"
+    type:     annotation
+    prefix:   /

@@ -1,0 +1,7 @@
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing/swaggerui.xml"
+    prefix:   /api/doc
+
+moriven_ui:
+    prefix: /
+    resource: "@MorivenBundle/Resources/config/routing.yml"

@@ -1,0 +1,12 @@
+services:
+    cp.campaigner.repository:
+        abstract: true
+        factory: ['@doctrine.orm.entity_manager', getRepository]
+        calls:
+            - [setLogger, ['@?logger']]
+
+    cp.campaigner.user_repository:
+        class: MorivenBundle\Repository\UserRepository
+        parent: cp.campaigner.repository
+        arguments: ['MorivenBundle:User']
+        lazy: true

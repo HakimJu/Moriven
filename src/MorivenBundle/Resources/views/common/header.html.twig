@@ -1,0 +1,56 @@
+<header id="home">
+    <!-- Background Image -->
+    <div class="bg-img" style="background-image: url({{ asset('bundles/moriven/img/background1.jpg') }});">
+        <div class="overlay"></div>
+    </div>
+    <!-- /Background Image -->
+
+    <!-- Nav -->
+    <nav id="nav" class="navbar nav-transparent">
+        <div class="container">
+
+            <div class="navbar-header">
+                <!-- Logo -->
+                <div class="navbar-brand">
+                    <a href="index.html.twig">
+                        <img class="logo" src="{{ asset('bundles/moriven/img/moriven.jpg') }}" alt="logo">
+                        <img class="logo-alt" src="{{ asset('bundles/moriven/img/moriven.jpg') }}" alt="logo">
+                    </a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Collapse nav button -->
+                <div class="nav-collapse">
+                    <span></span>
+                </div>
+                <!-- /Collapse nav button -->
+            </div>
+
+            <!--  Main navigation  -->
+            {% include 'MorivenBundle:common:menu.html.twig' %}
+            <!-- /Main navigation -->
+
+        </div>
+    </nav>
+    <!-- /Nav -->
+
+    <!-- home wrapper -->
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+
+                <!-- home content -->
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="home-content">
+                        <h1 class="white-text">We Are Creative Company</h1>
+                        <p class="white-text">Moriven offers an extensive range of services to reach your targeted spectators and carve up your valuable information focusing on retaining your customers. Our service includes Web application development, Website designing, Corporate profiles and presentations, E-commerce solutions, Application development, maintenance, and re-engineering, Mail gateways, Web hosting solutions, Search Engine Optimization, and Flash development. </p>
+                    </div>
+                </div>
+                <!-- /home content -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /home wrapper -->
+
+</header>
